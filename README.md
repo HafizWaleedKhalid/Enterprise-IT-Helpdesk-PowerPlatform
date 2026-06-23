@@ -1,53 +1,16 @@
 # 🏗️ Enterprise IT Helpdesk System
 
-**Platform:** Microsoft Power Platform and Microsoft Dataverse
-**Developer:** Hafiz Waleed Khalid
+**Platform:** Microsoft Power Platform and Microsoft Dataverse  
+**Developer:** Hafiz Waleed Khalid  
 **Status:** 🟡 In Progress — Week 2 of 8
 
 ---
 
 ## 📋 Project Overview
 
-A fully functional, enterprise-grade IT support ticket
-management system — built from scratch on Microsoft
-Power Platform and Dataverse.
+A fully functional, enterprise-grade IT support ticket management system — built from scratch on Microsoft Power Platform and Dataverse.
 
-This is not a tutorial copy. Every design decision,
-table structure, security model, and automation is
-planned and built following real enterprise standards —
-the same way a consulting firm would deliver it to a client.
-
----
-
-## 🎯 What This Project Demonstrates
-
-- Dataverse data modeling and relational database design
-- Custom table creation with proper naming conventions
-- Relationships — Lookup, One-to-Many, Many-to-Many
-- Power Apps — Canvas and Model Driven App development
-- Power Automate — automated ticket assignment and notifications
-- Power BI — live management dashboard
-- Enterprise security roles and row-level access control
-- ALM — solution deployment from Dev to Test to Production
-
-# 🏗️ Enterprise IT Helpdesk System
-
-**Platform:** Microsoft Power Platform and Microsoft Dataverse
-**Developer:** Hafiz Waleed Khalid
-**Status:** 🟡 In Progress — Week 2 of 8
-
----
-
-## 📋 Project Overview
-
-A fully functional, enterprise-grade IT support ticket
-management system — built from scratch on Microsoft
-Power Platform and Dataverse.
-
-This is not a tutorial copy. Every design decision,
-table structure, security model, and automation is
-planned and built following real enterprise standards —
-the same way a consulting firm would deliver it to a client.
+This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm would deliver it to a client.
 
 ---
 
@@ -65,33 +28,23 @@ the same way a consulting firm would deliver it to a client.
 ---
 
 ## 🗂️ Project Structure
+
+```
 Enterprise-IT-Helpdesk-PowerPlatform/
-
 │
-
 ├── 📁 screenshots/
-
 │   ├── Week1-Environment-Setup.png
-
 │   ├── Week2-DataModel.png
-
 │   └── (added weekly)
-
 │
-
 ├── 📁 data-model/
-
 │   └── IT-Helpdesk-DataModel.md
-
 │
-
 ├── 📁 docs/
-
 │   └── solution-design.md
-
 │
-
 └── README.md
+```
 
 ---
 
@@ -179,5 +132,5 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 
 ---
 
-*Last Updated: June 2026*
+*Last Updated: June 2026*  
 *This repository is updated weekly as each phase completes.*
