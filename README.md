@@ -34,7 +34,7 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 │
 ├── 📁 screenshots/
 │   ├── Week1-Environment-Setup.png
-│   ├── Week2-DataModel.png
+│   ├── Week1-Contact-Table-Columns.png
 │   └── (added weekly)
 │
 ├── 📁 data-model/
@@ -86,9 +86,13 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 
 ## 📸 Screenshots
 
-### Week 1 — Environment Setup
-<!-- ADD Week1-Environment-Setup.png here -->
-*Waleed Dev Environment created with Dataverse enabled*
+### Week 1 — Environment Setup and Architecture Design
+![Week 1 - Environment Setup](screenshots/Week1-Environment-Setup.png)
+*Waleed Dev Environment successfully created — Type: Developer, Status: Ready, Dataverse: Enabled*
+
+### Week 1 — Contact Table Columns in Dataverse
+![Week 1 - Contact Table](screenshots/Week1-Contact-Table-Columns.png)
+*Real Dataverse table showing Lookup (Foreign Key) and Unique Identifier (Primary Key) fields*
 
 ### Week 2 — Data Model
 <!-- ADD Week2-DataModel.png here -->
@@ -106,6 +110,9 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 | Table naming | PascalCase — IT_Ticket | Enterprise naming convention |
 | Data type for Category | Lookup field | Prevents free-text errors and data integrity issues |
 | Solution type | Custom solution | Never build in Default Solution |
+| IT Ticket | Custom table | No standard table covers this |
+| Category | Custom table with Lookup | Prevents free text errors |
+| Employees | Reuse Contact table | Already built by Microsoft |
 
 ---
 
@@ -117,6 +124,10 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 - Always create a separate Developer environment before touching anything
 - Standard tables like Account and Contact already exist in Dataverse — no need to rebuild them
 - Environment region affects data residency — important for enterprise clients
+- Lookup field is Dataverse's name for Foreign Key
+- Unique Identifier is Dataverse's name for Primary Key
+- Choice field = small fixed list, Lookup field = growing list with its own table
+- Power Platform tools all share one Dataverse backbone
 
 **Week 2:**
 - *(Coming Soon)*
