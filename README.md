@@ -105,7 +105,7 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 *Category table with 4 records — Hardware, Software, Network, Access Request*
 
 ### Week 3 — Security Model Design
-![Week 3 Security](screenshots/Week3-Security-Design.png)
+![Week 3 Security](screenshots/Week3-Security.png)
 *Complete security architecture — Security Roles,
 Business Units, Teams, and Column Security Profiles
 designed for IT Helpdesk System*
