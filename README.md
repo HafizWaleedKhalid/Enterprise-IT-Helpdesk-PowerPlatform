@@ -2,7 +2,7 @@
 
 **Platform:** Microsoft Power Platform and Microsoft Dataverse  
 **Developer:** Hafiz Waleed Khalid  
-**Status:** 🟡 In Progress — Week 3 of 8
+**Status:** 🟡 In Progress — Week 4 of 8
 
 ---
 
@@ -10,7 +10,7 @@
 
 A fully functional, enterprise-grade IT support ticket management system — built from scratch on Microsoft Power Platform and Dataverse.
 
-This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm would build it for a real client.
+This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm woul[...]
 
 ---
 
@@ -56,8 +56,8 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 |------|-----------|--------|
 | Week 1 | Environment Setup and Architecture Design | ✅ Complete |
 | Week 2 | Data Modeling in Dataverse | ✅ Complete |
-| Week 3 | Security Roles and Access Control | 🔄 In Progress |
-| Week 4 | Power Apps UI — Canvas and Model Driven | ⏳ Coming Soon |
+| Week 3 | Security Roles and Access Control | ✅ Complete |
+| Week 4 | Power Apps UI — Canvas and Model Driven | 🔄 In Progress |
 | Week 5 | Power Automate Flows and Business Logic | ⏳ Coming Soon |
 | Week 6 | Power BI Reporting and Dashboard | ⏳ Coming Soon |
 | Week 7 | ALM and Deployment to Production | ⏳ Coming Soon |
@@ -104,6 +104,12 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 ![Week 2 Category](screenshots/Week2-Category-Data.png)
 *Category table with 4 records — Hardware, Software, Network, Access Request*
 
+### Week 3 — Security Model Design
+![Week 3 Security](screenshots/Week3-Security-Design.png)
+*Complete security architecture — Security Roles,
+Business Units, Teams, and Column Security Profiles
+designed for IT Helpdesk System*
+
 *(Screenshots added at the end of each week)*
 
 ---
@@ -121,6 +127,10 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 | hw_TicketStatus | Global Choice | Reusable across tables, updates everywhere |
 | hw_TicketPriority | Global Choice | Reusable across tables, updates everywhere |
 | Employees | Reuse Contact table | Already built by Microsoft |
+| Employee Role | User level access | Cannot see other employees tickets |
+| IT Staff Role | Organisation level Read and Update | Full visibility needed for IT work |
+| IT Manager Role | Full CRUD Organisation level | Complete system control |
+| Business Units | IT Department and General Staff | Mirrors company org chart |
 
 ---
 
@@ -145,6 +155,12 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 - Two columns named Status is normal — hw_Status is ours, statecode is system
 - Always create fresh Global Choice with hw_ prefix — not existing system choices
 - Canvas card view is unreliable — always use full Columns list view
+
+**Week 3:**
+- Security designed before building any app
+- Row Level Security — same screen, different data per user type
+- Access Teams for temporary external access
+- One Team addition = instant correct permissions for any new staff member
 
 ---
 
