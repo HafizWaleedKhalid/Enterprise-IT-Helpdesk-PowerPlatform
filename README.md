@@ -10,7 +10,7 @@
 
 A fully functional, enterprise-grade IT support ticket management system — built from scratch on Microsoft Power Platform and Dataverse.
 
-This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm woul[...]
+This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm would build it for a client.
 
 ---
 
@@ -37,12 +37,13 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 │   ├── Week1-Contact-Table-Columns.png
 │   ├── Week2-ITTicket-Columns.png
 │   ├── Week2-Category-Data.png
-│   └── (added weekly)
+│   ├── Week3-Security.png
+│   └── placeholder.md
 │
-├── 📁 data-model/
+├── 📁 data-model/           (planned — file not present in this branch)
 │   └── IT-Helpdesk-DataModel.md
 │
-├── 📁 docs/
+├── 📁 docs/                 (planned — file not present in this branch)
 │   └── solution-design.md
 │
 └── README.md
