@@ -10,7 +10,7 @@
 
 A fully functional, enterprise-grade IT support ticket management system — built from scratch on Microsoft Power Platform and Dataverse.
 
-This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm would build it for a client.
+This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm would bu[...] 
 
 ---
 
@@ -87,31 +87,17 @@ Enterprise-IT-Helpdesk-PowerPlatform/
 
 ---
 
-## 📸 Screenshots
+## 🔐 Security Model Summary
 
-### Week 1 — Environment Setup and Architecture Design
-![Week 1 - Environment Setup](screenshots/Week1-Environment-Setup.png)
-*Waleed Dev Environment successfully created — Type: Developer, Status: Ready, Dataverse: Enabled*
+The system uses a structured, team-based security model to enforce data privacy and operational roles.
 
-### Week 1 — Contact Table Columns in Dataverse
-![Week 1 - Contact Table](screenshots/Week1-Contact-Table-Columns.png)
-*Real Dataverse table showing Lookup (Foreign Key) and Unique Identifier (Primary Key) fields*
+| Team | Business Unit | Security Role | Access Level (on IT Tickets) |
+| :--- | :--- | :--- | :--- |
+| **General Employees Team** | General Staff | IT Helpdesk Employee | **User**: Create, Read, Update own tickets only |
+| **IT Support Team** | IT Department | IT Helpdesk IT Staff | **Organisation**: Read and Update all tickets |
+| **IT Management Team** | IT Department | IT Helpdesk IT Manager | **Organisation**: Full Create, Read, Update, Delete access |
 
-### Week 2 — IT Ticket Table Columns
-![Week 2 Columns](screenshots/Week2-ITTicket-Columns.png)
-*IT Ticket table with all 11 columns built in Dataverse*
-
-### Week 2 — Category Table Data
-![Week 2 Category](screenshots/Week2-Category-Data.png)
-*Category table with 4 records — Hardware, Software, Network, Access Request*
-
-### Week 3 — Security Model Design
-![Week 3 Security](screenshots/Week3-Security.png)
-*Complete security architecture — Security Roles,
-Business Units, Teams, and Column Security Profiles
-designed for IT Helpdesk System*
-
-*(Screenshots added at the end of each week)*
+This structure makes it clear that you didn't just create roles, but designed a complete, logical system where each team's permissions match their job function perfectly.
 
 ---
 
@@ -131,7 +117,11 @@ designed for IT Helpdesk System*
 | Employee Role | User level access | Cannot see other employees tickets |
 | IT Staff Role | Organisation level Read and Update | Full visibility needed for IT work |
 | IT Manager Role | Full CRUD Organisation level | Complete system control |
-| Business Units | IT Department and General Staff | Mirrors company org chart |
+| Security Role: Employee | IT Helpdesk Employee (User level Create/Read/Update on own tickets) | Employees should only manage their own tickets and never see colleague's data. |
+| Security Role: IT Staff | IT Helpdesk IT Staff (Organisation level Read/Update) | IT staff need full visibility of all tickets to resolve issues efficiently. |
+| Security Role: IT Manager | IT Helpdesk IT Manager (Organisation level Full CRUD) | Managers require complete control for oversight, reporting, and system administration. |
+| Business Units | IT Department and General Staff under the root org0709eaea | Mirrors the company org chart to enforce data isolation between departments. |
+| Teams | IT Support Team, IT Management Team, General Employees Team | Allows for efficient, group-based permission management, eliminating the need for per-user role assignment. |
 
 ---
 
@@ -160,8 +150,39 @@ designed for IT Helpdesk System*
 **Week 3:**
 - Security designed before building any app
 - Row Level Security — same screen, different data per user type
+- **Business Units must be created before assigning to Users or Teams**
+- **Each Team requires an Administrator (e.g., yourself) to be saved**
+- **Security Roles are assigned to Teams, not directly to individual users**
 - Access Teams for temporary external access
 - One Team addition = instant correct permissions for any new staff member
+
+---
+
+## 📸 Screenshots
+
+### Week 1 — Environment Setup and Architecture Design
+![Week 1 - Environment Setup](screenshots/Week1-Environment-Setup.png)
+*Waleed Dev Environment successfully created — Type: Developer, Status: Ready, Dataverse: Enabled*
+
+### Week 1 — Contact Table Columns in Dataverse
+![Week 1 - Contact Table](screenshots/Week1-Contact-Table-Columns.png)
+*Real Dataverse table showing Lookup (Foreign Key) and Unique Identifier (Primary Key) fields*
+
+### Week 2 — IT Ticket Table Columns
+![Week 2 Columns](screenshots/Week2-ITTicket-Columns.png)
+*IT Ticket table with all 11 columns built in Dataverse*
+
+### Week 2 — Category Table Data
+![Week 2 Category](screenshots/Week2-Category-Data.png)
+*Category table with 4 records — Hardware, Software, Network, Access Request*
+
+### Week 3 — Security Model Design
+![Week 3 Security](screenshots/Week3-Security.png)
+*Complete security architecture — Security Roles,
+Business Units, Teams, and Column Security Profiles
+designed for IT Helpdesk System*
+
+*(Screenshots added at the end of each week)*
 
 ---
 
