@@ -10,7 +10,7 @@
 
 A fully functional, enterprise-grade IT support ticket management system — built from scratch on Microsoft Power Platform and Dataverse.
 
-This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm would bu[...] 
+This is not a tutorial copy. Every design decision, table structure, security model, and automation is planned and built following real enterprise standards — the same way a consulting firm woul[...] 
 
 ---
 
@@ -99,6 +99,12 @@ The system uses a structured, team-based security model to enforce data privacy 
 
 This structure makes it clear that you didn't just create roles, but designed a complete, logical system where each team's permissions match their job function perfectly.
 
+![Business Units hierarchy](screenshots/Week3-BusinessUnits.png)  
+*Business Units hierarchy — root org and child business units.*
+
+![Teams and assigned members](screenshots/Week3-Teams.png)  
+*Teams and assigned members — mapping to Business Units and Security Roles.*
+
 ---
 
 ## 🏛️ Architecture Decisions
@@ -181,6 +187,12 @@ This structure makes it clear that you didn't just create roles, but designed a 
 *Complete security architecture — Security Roles,
 Business Units, Teams, and Column Security Profiles
 designed for IT Helpdesk System*
+
+![Week 3 - Business Units](screenshots/Week3-BusinessUnits.png)  
+*Business Units hierarchy — created under the root org to enforce data isolation.*
+
+![Week 3 - Teams](screenshots/Week3-Teams.png)  
+*Teams and assigned members — shows Team membership and assigned security roles.*
 
 *(Screenshots added at the end of each week)*
 
